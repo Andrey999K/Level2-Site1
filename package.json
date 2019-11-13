@@ -1,0 +1,58 @@
+{
+  "name": "gulp-simple",
+  "version": "1.0.0",
+  "description": "Gulp Lightweight - starter template for HTML5 development. Made by Ereburg",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https//github.com/Ereburg/gulp-lightweight"
+  },
+  "scripts": {
+    "style:lint": "stylelint \"app/sass/*.scss\" --syntax scss",
+    "style:fix": "stylelint \"app/sass/*.scss\" --syntax scss --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulpplugin",
+    "purgecss",
+    "image",
+    "terser",
+    "sass",
+    "minify",
+    "compress",
+    "png",
+    "jpg",
+    "jpeg",
+    "svg"
+  ],
+  "author": "Eugene Kotsarev <eugene.kotsarev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-purgecss": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-terser": "^1.2.0",
+    "gulp-tinypng-web": "^1.0.1",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "stylelint": "^11.1.1",
+    "stylelint-config-htmlacademy": "^0.1.4",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^3.1.1"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 2%"
+  ],
+  "dependencies": {}
+}

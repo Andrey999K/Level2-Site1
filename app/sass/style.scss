@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1b1e22;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+@mixin flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin center {
+  max-width: 1440px;
+  margin: auto;
+}
+
+@mixin container {
+  max-width: 1128px;
+  margin: auto;
+}
+
+.header {
+  @include center();
+  padding-top: 29px;
+  background: url(../images/background.jpg) no-repeat center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container();
+}
+
+.header-top__right {
+  // @include flex-box();
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 292px;
+  width: 100%;
+}
+
+.header-top__lang {
+  @include flex-box();
+  list-style-type: none;
+  max-width: 76px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.other-lang a {
+  color: rgba(196, 196, 196, 0.5);
+}
+
+.lang {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav {
+  @include flex-box();
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 657px;
+  width: 100%;
+}
+
+.nav-list {
+  @include flex-box();
+  max-width: 476px;
+  width: 100%;
+}
+
+.nav-list__item {
+  list-style-type: none;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav__help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 146px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #ffb800;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.banner {
+  @include flex-box();
+  max-width: 1205px;
+  margin: auto;
+}
+
+.banner-text__title {
+  max-width: 585px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 42px;
+}
+
+.banner-text__action {
+  font-size: 20px;
+  line-height: 38px;
+  max-width: 474px;
+}
+
+.banner-search {
+  // background: rgba(51, 51, 51, 0.25);
+  // box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  background: inherit;
+  filter: blur(24px);
+}
