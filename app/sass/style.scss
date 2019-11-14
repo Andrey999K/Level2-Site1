@@ -106,13 +106,13 @@ body {
   width: 100%;
   max-width: 146px;
   height: 48px;
+  color: #ffffff;
   font-size: 18px;
   line-height: 32px;
-  cursor: pointer;
   background: none;
-  color: #ffffff;
   border: 1px solid #ffb800;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .banner {
@@ -438,6 +438,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include container();
   margin-bottom: 62px;
 }
@@ -469,11 +470,11 @@ body {
 .ten-places__title {
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin: 51px 15px 28px;
   font-weight: 500;
   font-size: 34px;
   line-height: 38px;
-  margin: 51px 15px 28px;
+  text-align: center;
 }
 
 .date {
@@ -487,24 +488,24 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 264px;
-  background: #23282f;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   height: 480px;
+  background: #23282f;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .travel-bloger__title {
+  margin: 0 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 20px;
 }
 
 .travel-bloger__description {
+  margin: 0 20px;
   font-size: 14px;
   line-height: 20px;
   mix-blend-mode: normal;
-  margin: 0 20px;
 }
 
 .lifehacks {
@@ -513,24 +514,24 @@ body {
   justify-content: space-between;
   width: 100%;
   max-width: 264px;
-  background: #23282f;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   height: 480px;
+  background: #23282f;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .lifehacks__title {
+  margin: 0 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 20px;
 }
 
 .lifehacks__description {
+  margin: 0 20px;
   font-size: 14px;
   line-height: 20px;
   mix-blend-mode: normal;
-  margin: 0 20px;
 }
 
 .card-bottom {
@@ -550,8 +551,8 @@ body {
 
 .comments {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .comments__icon {
@@ -564,8 +565,8 @@ body {
 
 .likes {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .likes__icon {
@@ -582,16 +583,16 @@ body {
   align-items: center;
   width: 100%;
   max-width: 924px;
-  margin: auto;
   height: 362px;
+  margin: auto;
   margin-bottom: 61px;
 }
 
 .reviews__title {
+  margin-bottom: 35px;
   font-weight: 500;
   font-size: 34px;
   line-height: 38px;
-  margin-bottom: 35px;
 }
 
 .reviews__photo {
@@ -599,28 +600,25 @@ body {
 }
 
 .reviews__text {
+  margin-bottom: 10px;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .reviews__name {
+  color: #ffb800;
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
-  color: #ffb800;
-}
-
-.footer {
-  width: 100%;
-  max-width: 1026px;
-  margin: 0 auto 16px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1026px;
+  margin: 0 auto 16px;
   font-size: 13px;
   line-height: 16px;
 }
@@ -647,20 +645,20 @@ body {
 }
 
 .email-text {
+  margin-right: 26px;
   margin-bottom: 15px;
   color: #ffb800;
-  margin-right: 26px;
 }
 
 .address-text {
+  margin-right: 26px;
   margin-bottom: 15px;
   color: #ffb800;
-  margin-right: 26px;
 }
 
 .phone-text {
-  color: #ffb800;
   margin-right: 26px;
+  color: #ffb800;
 }
 
 .phone-number-1 {
@@ -673,7 +671,7 @@ body {
 
 .social-networks__links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
