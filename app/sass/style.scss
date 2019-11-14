@@ -106,8 +106,11 @@ body {
   width: 100%;
   max-width: 146px;
   height: 48px;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+  background: none;
   color: #ffffff;
-  text-decoration: none;
   border: 1px solid #ffb800;
   border-radius: 10px;
 }
@@ -235,15 +238,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @include container();
 }
 
 .advantages__title {
+  margin-bottom: 21px;
   font-weight: 500;
   font-size: 34px;
-  line-height: 38px;
   font-style: normal;
-  margin-bottom: 21px;
+  line-height: 38px;
 }
 
 .advantages-description {
@@ -254,8 +258,8 @@ body {
 .advantage {
   display: flex;
   flex-direction: column;
-  max-width: 264px;
   width: 100%;
+  max-width: 264px;
 }
 
 .advantage__image {
@@ -263,10 +267,10 @@ body {
 }
 
 .advantage__description {
-  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
 }
 
 .directions {
@@ -278,11 +282,11 @@ body {
 }
 
 .directions__title {
-  text-align: center;
+  margin-bottom: 45px;
   font-weight: 500;
   font-size: 34px;
   line-height: 38px;
-  margin-bottom: 45px;
+  text-align: center;
 }
 
 .directions-info {
@@ -296,20 +300,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 360px;
   width: 100%;
+  max-width: 360px;
+  height: 432px;
+  margin: 12px;
   background: #23282f;
   border-radius: 4px;
-  margin: 12px;
-  height: 432px;
 }
 
 .direction:hover {
-  background: #ffffff;
-  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.75);
   max-width: 384px;
   height: 456px;
   margin: 0;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   transition: 0.5s;
 
@@ -344,52 +348,69 @@ body {
   }
 }
 
+.direction:not(:hover) {
+  transition: 0.5s;
+
+  .direction__image,
+  .direction__title,
+  .direction__description,
+  .direction__details {
+    transition: 0.5s;
+  }
+}
+
 .direction__title {
+  margin: 0 20px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 20px;
 }
 
 .direction__description {
+  margin: 0 20px;
   font-size: 14px;
   line-height: 20px;
-  margin: 0 20px;
 }
 
 .direction__details {
+  margin: 0 20px 24px;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
-  margin: 0 20px 24px;
   opacity: 0.5;
 }
 
 .button {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  border: 1px solid #ffb800;
-  border-radius: 4px;
   width: 100%;
   max-width: 216px;
   height: 48px;
-  background: none;
   color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  background: none;
+  border: 1px solid #ffb800;
+  border-radius: 4px;
   outline: none;
   cursor: pointer;
 }
 
+.button:hover {
+  color: #000000;
+  background: #ffb800;
+}
+
 .statistics {
-  background: url("/images/statistics-background.jpg") no-repeat center;
-  padding: 59px 0 68px;
   margin-bottom: 62px;
+  padding: 59px 0 68px;
+  background: url("/images/statistics-background.jpg") no-repeat center;
 }
 
 .statistics-content {
   display: flex;
   justify-content: space-between;
+
   @include container();
 }
 
@@ -400,11 +421,11 @@ body {
 }
 
 .data__number {
+  margin-bottom: 22px;
+  color: #ffb800;
   font-weight: 500;
   font-size: 78px;
   line-height: 58px;
-  color: #ffb800;
-  margin-bottom: 22px;
 }
 
 .data__text {
@@ -417,22 +438,118 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include container();
 }
 
 .blog__title {
+  margin-bottom: 44px;
   font-weight: 500;
   font-size: 34px;
   line-height: 38px;
-  margin-bottom: 44px;
 }
 
 .blog__description {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 48px;
 }
 
 .ten-places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 552px;
   background: url("/images/blog-10-places.jpg") no-repeat center;
+  border-radius: 4px;
+}
+
+.ten-places__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  margin: 51px 15px 28px;
+}
+
+.date {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.travel-bloger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 264px;
+  background: #23282f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 480px;
+}
+
+.travel-bloger__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 20px;
+}
+
+.travel-bloger__description {
+  font-size: 14px;
+  line-height: 20px;
+  mix-blend-mode: normal;
+  margin: 0 20px;
+}
+
+.lifehacks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 264px;
+  background: #23282f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 480px;
+}
+
+.lifehacks__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 20px;
+}
+
+.lifehacks__description {
+  font-size: 14px;
+  line-height: 20px;
+  mix-blend-mode: normal;
+  margin: 0 20px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 92px;
+}
+
+.comments {
+  display: flex;
+}
+.likes {
+  display: flex;
 }
