@@ -549,7 +549,28 @@ body {
 
 .comments {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.comments__icon {
+  margin-right: 7px;
+}
+
+.comments__icon:hover {
+  cursor: pointer;
+}
+
 .likes {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes__icon {
+  margin-right: 7px;
+}
+
+.likes__icon:hover {
+  cursor: pointer;
 }
