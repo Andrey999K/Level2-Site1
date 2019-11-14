@@ -439,6 +439,7 @@ body {
   flex-direction: column;
   align-items: center;
   @include container();
+  margin-bottom: 62px;
 }
 
 .blog__title {
@@ -461,7 +462,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 552px;
-  background: url("/images/blog-10-places.jpg") no-repeat center;
+  background: url(../images/blog-10-places.jpg) no-repeat center;
   border-radius: 4px;
 }
 
@@ -573,4 +574,106 @@ body {
 
 .likes__icon:hover {
   cursor: pointer;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 924px;
+  margin: auto;
+  height: 362px;
+  margin-bottom: 61px;
+}
+
+.reviews__title {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  margin-bottom: 35px;
+}
+
+.reviews__photo {
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reviews__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffb800;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1026px;
+  margin: 0 auto 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+}
+
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+}
+
+.social-networks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 150px;
+}
+
+.email-text {
+  margin-bottom: 15px;
+  color: #ffb800;
+  margin-right: 26px;
+}
+
+.address-text {
+  margin-bottom: 15px;
+  color: #ffb800;
+  margin-right: 26px;
+}
+
+.phone-text {
+  color: #ffb800;
+  margin-right: 26px;
+}
+
+.phone-number-1 {
+  margin-bottom: 15px;
+}
+
+.social-networks__text {
+  color: #ffb800;
+}
+
+.social-networks__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
