@@ -274,8 +274,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1152px;
-  margin: auto;
-  margin-bottom: 48px;
+  margin: 0 auto 72px;
 }
 
 .directions__title {
@@ -290,6 +289,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .direction {
@@ -365,7 +365,7 @@ body {
   opacity: 0.5;
 }
 
-.directions__button {
+.button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -379,4 +379,60 @@ body {
   font-family: "Montserrat", sans-serif;
   outline: none;
   cursor: pointer;
+}
+
+.statistics {
+  background: url("/images/statistics-background.jpg") no-repeat center;
+  padding: 59px 0 68px;
+  margin-bottom: 62px;
+}
+
+.statistics-content {
+  display: flex;
+  justify-content: space-between;
+  @include container();
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data__number {
+  font-weight: 500;
+  font-size: 78px;
+  line-height: 58px;
+  color: #ffb800;
+  margin-bottom: 22px;
+}
+
+.data__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__title {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 38px;
+  margin-bottom: 44px;
+}
+
+.blog__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ten-places {
+  width: 100%;
+  max-width: 552px;
+  background: url("/images/blog-10-places.jpg") no-repeat center;
 }
