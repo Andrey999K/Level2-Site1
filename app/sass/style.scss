@@ -29,6 +29,7 @@ body {
 
 .header {
   @include center();
+  height: 1032px;
   padding-top: 29px;
   background: linear-gradient(
       180deg,
@@ -241,10 +242,6 @@ body {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-}
-
-.form__find:hover {
-  background: #ffc532;
 }
 
 .advantages {
