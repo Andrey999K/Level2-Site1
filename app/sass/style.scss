@@ -29,7 +29,6 @@ body {
 
 .header {
   @include center();
-  height: 1032px;
   padding-top: 29px;
   background: linear-gradient(
       180deg,
@@ -287,7 +286,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1152px;
+  max-width: 1252px;
+  padding: 0 50px;
   margin: 0 auto 72px;
 }
 
@@ -325,17 +325,17 @@ body {
   background: #ffffff;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75);
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 
   .direction__image {
     width: 384px;
     height: 228px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   .direction__title {
     margin: 0 32px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   .direction__title {
@@ -344,7 +344,7 @@ body {
 
   .direction__description {
     margin: 0 32px;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   .direction__description {
@@ -354,18 +354,18 @@ body {
   .direction__details {
     margin: 0 32px 33px;
     color: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 
 .direction:not(:hover) {
-  transition: 0.5s;
+  transition: 0.3s;
 
   .direction__image,
   .direction__title,
   .direction__description,
   .direction__details {
-    transition: 0.5s;
+    transition: 0.3s;
   }
 }
 
@@ -448,9 +448,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @include container();
-  margin-bottom: 62px;
+  max-width: 1228px;
+  padding: 0 50px;
+  margin: 0 auto 62px;
 }
 
 .blog__title {
@@ -637,15 +637,16 @@ body {
 .footer-left {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
-  max-width: 300px;
+  max-width: 240px;
 }
 
 .phones {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 300px;
+  max-width: 240px;
 }
 
 .social-networks {
@@ -661,13 +662,11 @@ body {
 }
 
 .email-text {
-  margin-right: 26px;
   margin-bottom: 15px;
   color: #ffb800;
 }
 
 .address-text {
-  margin-right: 26px;
   margin-bottom: 15px;
   color: #ffb800;
 }
@@ -721,7 +720,7 @@ body {
   }
 
   .directions {
-    max-width: 770px;
+    max-width: 870px;
   }
 
   .blog__description {
@@ -758,8 +757,14 @@ body {
     display: none;
   }
 
-  .menu-icon {
-    display: block;
+  // .menu-icon {
+  //   display: block;
+  // }
+
+  .header-top__right {
+    flex-direction: column;
+    max-width: 183px;
+    align-items: flex-start;
   }
 
   .banner {
@@ -772,13 +777,261 @@ body {
     margin-bottom: 42px;
   }
 
+  .advantages__title {
+    margin-bottom: 41px;
+  }
+
+  .advantages-description {
+    flex-wrap: wrap;
+    max-width: 540px;
+  }
+
+  .advantage {
+    margin-bottom: 30px;
+  }
+
+  .directions-info {
+    justify-content: center;
+  }
+
   .data__number {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
     margin-bottom: 5px;
   }
 
   .data__text {
+    font-size: 14px;
+  }
+
+  .footer-left {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages-description {
+    justify-content: center;
+  }
+
+  .statistics {
+    padding: 20px 0;
+  }
+
+  .statistics-content {
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
+
+  .blog__description {
+    max-width: 526px;
+    justify-content: center;
+  }
+
+  .travel-bloger {
+    margin-bottom: 20px;
+  }
+
+  .data {
+    width: 100%;
+    max-width: 166px;
+  }
+
+  // .footer {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+
+  .footer {
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  // .footer-left,
+  // .phones {
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+
+  .footer-left {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+    height: 90px;
+    margin: 0;
+  }
+
+  .phones {
+    flex-direction: column;
+    max-width: 200px;
+  }
+
+  .social-networks {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .email-text,
+  .email,
+  .address-text,
+  .address,
+  .phone-text,
+  .phone-numbers,
+  .social-networks__text {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 614px) {
+  .banner-text__title {
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .banner-text__action {
+    text-align: center;
     font-size: 16px;
+    line-height: 20px;
+  }
+
+  .banner-search__title {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .form-input {
+    flex-direction: column;
+  }
+
+  .form__when {
+    max-width: 352px;
+    margin-bottom: 20px;
+  }
+
+  .form__duration {
+    max-width: 352px;
+  }
+
+  .advantages__title {
+    font-size: 28px;
+  }
+
+  .directions__title {
+    margin-bottom: 10px;
+  }
+
+  .statistics-content {
+    justify-content: center;
+  }
+
+  .data {
+    flex-direction: row;
+    max-width: 300px;
+    width: initial;
+  }
+
+  .data__number {
+    margin: 0 10px 0 0;
+  }
+
+  .ten-places__title {
+    font-size: 21px;
+  }
+
+  .reviews {
+    height: initial;
+  }
+
+  .reviews__title {
+    text-align: center;
+  }
+
+  .reviews__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    height: initial;
+  }
+
+  .email-text,
+  .address-text,
+  .phone-text,
+  .social-networks__text {
+    margin-bottom: 7px;
+  }
+
+  .phone-number-1 {
+    margin-bottom: 5px;
+  }
+
+  .social-networks {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-top {
+    justify-content: center;
+  }
+
+  .header-top__right {
+    align-items: center;
+  }
+
+  .banner,
+  .advantages,
+  .blog,
+  .directions,
+  .reviews,
+  .banner-search {
+    padding: 0 15px;
+  }
+
+  .banner-text__title {
+    font-size: 30px;
+  }
+
+  .banner-text__action {
+    font-size: 15px;
+  }
+
+  .direction {
+    max-width: 266px;
+  }
+
+  .direction:hover {
+    max-width: 290px;
+    .direction__image {
+      width: 290px;
+      height: 174px;
+    }
+  }
+
+  .direction__image {
+    width: 266px;
+    height: 160px;
+  }
+
+  .blog__title {
+    margin-bottom: 10px;
+  }
+
+  .ten-places__title {
+    font-size: 18px;
+  }
+
+  .reviews__title {
+    font-size: 26px;
   }
 }
