@@ -11,11 +11,9 @@ body {
   margin: 0;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.03) 2.5%,
-      rgba(27, 30, 34, 0.4) 42.42%,
-      #1b1e22 80.67%) no-repeat center top 0,
-    url("../images/background.jpg") no-repeat center top 0, #1b1e22;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.5%, rgba(27, 30, 34, 0.4) 42.42%, #1b1e22 80.67%) no-repeat center top 0,
+    url("../images/background.jpg") no-repeat center top 0,
+    #1b1e22;
   background-size: 1440px 1032px;
 }
 
@@ -42,13 +40,14 @@ body {
 .header {
   position: fixed;
   top: 29px;
-  @include container();
-  width: 100%;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   max-width: 1128px;
+
+  @include container();
 }
 
 .header__right {
@@ -114,8 +113,8 @@ body {
   background: none;
   border: 1px solid #ffb800;
   border-radius: 10px;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 }
 
 .nav__help:hover {
@@ -128,15 +127,15 @@ body {
 }
 
 .banner__title {
-  visibility: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect (0 0 0 0);
   overflow: hidden;
+  border: 0;
+  visibility: hidden;
+  clip: rect (0 0 0 0);
 }
 
 .banner__content {
@@ -224,15 +223,15 @@ body {
 }
 
 .label {
-  visibility: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect (0 0 0 0);
   overflow: hidden;
+  border: 0;
+  visibility: hidden;
+  clip: rect (0 0 0 0);
 }
 
 .form__where {
@@ -270,8 +269,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
   max-width: 1128px;
+  margin: auto;
 }
 
 .advantages__title {
@@ -285,19 +284,19 @@ body {
 .advantages-list {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1128px;
+  margin-bottom: 61px;
   // flex-wrap: wrap;
   list-style-type: none;
-  margin-bottom: 61px;
-  max-width: 1128px;
-  width: 100%;
 }
 
 .advantages-list__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 264px;
   width: 100%;
+  max-width: 264px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -305,8 +304,8 @@ body {
 
 .advantages-list__image {
   display: block;
-  height: 120px;
   width: 100%;
+  height: 120px;
 }
 
 .advantages-list__item:nth-child(1) .advantages-list__image {
@@ -326,8 +325,8 @@ body {
 }
 
 .advantages-list__text {
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
 .directions {
@@ -335,8 +334,8 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1252px;
-  padding: 0 50px;
   margin: 0 auto 72px;
+  padding: 0 50px;
 }
 
 .directions__title {
@@ -382,8 +381,8 @@ body {
   }
 
   .direction-list__prise-date {
-    width: 264px;
     top: -233px+185px;
+    width: 264px;
     transition: 0.8s;
   }
 
@@ -433,34 +432,34 @@ body {
   display: flex;
   width: 248px;
   height: 32px;
-  font-size: 13px;
   font-weight: 500;
+  font-size: 13px;
   background: rgba(27, 30, 34, 0.75);
-  border-radius: 0px 6px 6px 0px;
+  border-radius: 0 6px 6px 0;
 }
 
 .direction-list__prise {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  line-height: 20px;
-  padding-bottom: 4px;
+  justify-content: center;
   width: 78px;
+  padding-bottom: 4px;
   color: #1b1e22;
+  line-height: 20px;
   background: #ffb800;
 }
 
 .text-prise {
+  margin-left: 4px;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  font-weight: bold;
-  margin-left: 4px;
 }
 
 .direction-list__date {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 170px;
   color: #ffffff;
 }
@@ -514,15 +513,15 @@ body {
 }
 
 .statistics__title {
-  visibility: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect (0 0 0 0);
   overflow: hidden;
+  border: 0;
+  visibility: hidden;
+  clip: rect (0 0 0 0);
 }
 
 .statistics-list {
@@ -557,8 +556,8 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1228px;
-  padding: 0 50px;
   margin: 0 auto 62px;
+  padding: 0 50px;
 }
 
 .blog__title {
@@ -580,8 +579,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 480px;
   max-width: 552px;
+  height: 480px;
   background: url("../images/blog-10-places.jpg") no-repeat center;
   border-radius: 4px;
 }
@@ -757,8 +756,8 @@ body {
 }
 
 .email {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .email-text,
@@ -780,13 +779,13 @@ body {
 
 .phone-number-1 {
   margin-bottom: 15px;
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .phone-number-2 {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .social-networks__text {
@@ -809,8 +808,8 @@ body {
 
 .footer-list__item {
   display: flex;
-  max-width: 250px;
   flex-wrap: wrap;
+  max-width: 250px;
 }
 
 @media (max-width: 1280px) {
@@ -855,10 +854,7 @@ body {
 
 @media (max-width: 1024px) {
   .banner1 {
-    background: linear-gradient(180deg,
-        rgba(255, 255, 255, 0.03) 2.5%,
-        rgba(27, 30, 34, 0.4) 42.42%,
-        #1b1e22 80.67%),
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.5%, rgba(27, 30, 34, 0.4) 42.42%, #1b1e22 80.67%),
       url("../images/background.jpg") no-repeat;
   }
 
@@ -872,13 +868,13 @@ body {
 
   .header__right {
     flex-direction: column;
-    max-width: 183px;
     align-items: flex-start;
+    max-width: 183px;
   }
 
   .banner__content {
-    max-width: 600px;
     flex-direction: column;
+    max-width: 600px;
     margin-bottom: 70px;
   }
 
@@ -905,9 +901,9 @@ body {
   }
 
   .statistics-list__number {
+    margin-bottom: 5px;
     font-size: 40px;
     line-height: 50px;
-    margin-bottom: 5px;
   }
 
   .statistics-list__text {
@@ -942,13 +938,13 @@ body {
   }
 
   .statistics-list {
-    max-width: 500px;
     flex-wrap: wrap;
+    max-width: 500px;
   }
 
   .blog__description {
-    max-width: 526px;
     justify-content: center;
+    max-width: 526px;
   }
 
   .travel-bloger {
@@ -1010,20 +1006,20 @@ body {
 
 @media (max-width: 614px) {
   .banner-text__title {
-    text-align: center;
     font-size: 34px;
     line-height: 34px;
+    text-align: center;
   }
 
   .banner-text__action {
-    text-align: center;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
   }
 
   .banner-search__title {
-    text-align: center;
     font-size: 16px;
+    text-align: center;
   }
 
   .form__row {
@@ -1053,8 +1049,8 @@ body {
 
   .statistics-list__item {
     flex-direction: row;
-    max-width: 300px;
     width: initial;
+    max-width: 300px;
   }
 
   .statistics-list__number {
@@ -1074,9 +1070,9 @@ body {
   }
 
   .reviews__text {
-    text-align: left;
     font-size: 14px;
     line-height: 20px;
+    text-align: left;
   }
 
   .footer {
