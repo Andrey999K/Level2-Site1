@@ -13,57 +13,63 @@
 <body class="page">
 
     <header class="header">
-        <div class="header-top">
-            <div class="header-top__right">
-                <img class="header-top__logo" src="./images/header-logo.svg" width="183" height="50" alt="header-logo">
-                <ul class="header-top__lang">
-                    <li class="other-lang"><a class="lang" href="#">Eng</a></li>
-                    <li class="current-lang"><a class="lang" href="#">Рус</a></li>
-                </ul>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#">Туры</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#">Визы</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#">Агентам</a></li>
-                    <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
-                </ul>
-                <button class="nav__help">Помощь</button>
-            </nav>
-            <img class="menu-icon" src="./images/menu.svg" alt="menu-icon">
+        <div class="header__right">
+            <img class="header__logo" src="./images/header-logo.svg" width="183" height="50" alt="header-logo">
+            <ul class="header__lang">
+                <li class="other-lang"><a class="lang" href="#">Eng</a></li>
+                <li class="current-lang"><a class="lang" href="#">Рус</a></li>
+            </ul>
         </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a class="nav-list__link" href="#">О нас</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Туры</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Визы</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Агентам</a></li>
+                <li class="nav-list__item"><a class="nav-list__link" href="#">Контакты</a></li>
+            </ul>
+            <button class="nav__help">Помощь</button>
+        </nav>
+        <img class="menu-icon" src="./images/menu.svg" alt="menu-icon">
+    </header>
 
-        <h1 class="product-name">Wild acation</h1>
+    <main class="main">
 
-        <div class="banner">
-            <div class="banner-text">
-                <h2 class="banner-text__title">Исследуйте мир
-                    вместе с нами</h2>
-                <p class="banner-text__action">Брось себе вызов. Отправься в путешествия в дикие уголки природы. </p>
+        <section class="banner">
+
+            <h1 class="banner__title">Wild acation</h1>
+            <div class="banner__content">
+                <div class="banner-text">
+                    <h2 class="banner-text__title">Исследуйте мир
+                        вместе с нами</h2>
+                    <p class="banner-text__action">Брось себе вызов. Отправься в путешествия в дикие уголки природы.
+                    </p>
+                </div>
+                <div class="banner-search">
+                    <h2 class="banner-search__title">Быстрый поиск тура</h2>
+                    <form class="form" method="POST">
+                        <p class="form__row">
+                            <label class="label" for="where"></label>
+                            <input class="input form__where" id="where" type="text" placeholder="Куда" required>
+                        </p>
+                        <p class="form__row">
+                            <label class="label" for="when"></label>
+                            <input class="input form__when" id="when" type="text" placeholder="Когда" required>
+                            <label class="label" for="duration"></label>
+                            <input class="input form__duration" id="duration" type="text"
+                                placeholder="Продолжительность" required>
+                        </p>
+                        <p class="form__row">
+                            <label class="label" for="tour-type"></label>
+                            <input class="input form__tour-type" id="tour-type" type="text" placeholder="Тип тура"
+                                required>
+                        </p>
+                        <button class="form__find" type="submit">Найти</button>
+                    </form>
+                </div>
             </div>
-            <div class="banner-search">
-                <h2 class="banner-search__title">Быстрый поиск тура</h2>
-                <form class="form" method="POST">
-                    <p class="form__row">
-                        <label class="label" for="where"></label>
-                        <input class="input form__where" id="where" type="text" placeholder="Куда" required>
-                    </p>
-                    <p class="form__row">
-                        <label class="label" for="when"></label>
-                        <input class="input form__when" id="when" type="text" placeholder="Когда" required>
-                        <label class="label" for="duration"></label>
-                        <input class="input form__duration" id="duration" type="text" placeholder="Продолжительность"
-                            required>
-                    </p>
-                    <p class="form__row">
-                        <label class="label" for="tour-type"></label>
-                        <input class="input form__tour-type" id="tour-type" type="text" placeholder="Тип тура" required>
-                    </p>
-                    <button class="form__find" type="submit">Найти</button>
-                </form>
-            </div>
-        </div>
+
+        </section>
 
         <section class="advantages">
             <h2 class="advantages__title">Почему именно мы</h2>
@@ -87,9 +93,6 @@
             </ul>
         </section>
 
-    </header>
-
-    <main class="main">
         <section class="directions">
             <h2 class="directions__title">Актуальные направления</h2>
             <div class="directions-list">

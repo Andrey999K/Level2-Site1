@@ -5,10 +5,18 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  background-color: #1b1e22;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03) 2.5%,
+      rgba(27, 30, 34, 0.4) 42.42%,
+      #1b1e22 80.67%) no-repeat center top 0,
+    url("../images/background.jpg") no-repeat center top 0, #1b1e22;
+  background-size: 1440px 1032px;
 }
 
 @mixin flex-box {
@@ -27,26 +35,23 @@ body {
   margin: auto;
 }
 
-.header {
+.banner1 {
   @include center();
-  padding-top: 29px;
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.03) 2.5%,
-      rgba(27, 30, 34, 0.4) 42.42%,
-      #1b1e22 80.67%),
-    url("../images/background.jpg") no-repeat center;
 }
 
-.header-top {
+.header {
+  position: fixed;
+  top: 29px;
+  @include container();
+  width: 100%;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1128px;
-  margin: 0 auto 77px;
 }
 
-.header-top__right {
-  // @include flex-box();
+.header__right {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -54,7 +59,7 @@ body {
   max-width: 292px;
 }
 
-.header-top__lang {
+.header__lang {
   @include flex-box();
   width: 100%;
   max-width: 76px;
@@ -122,7 +127,7 @@ body {
   display: none;
 }
 
-.product-name {
+.banner__title {
   visibility: hidden;
   position: absolute;
   width: 1px;
@@ -134,10 +139,10 @@ body {
   overflow: hidden;
 }
 
-.banner {
+.banner__content {
   @include flex-box();
   max-width: 1205px;
-  margin: 0 auto 208px;
+  margin: 166px auto 208px;
 }
 
 .banner-text__title {
@@ -810,7 +815,7 @@ body {
 
 @media (max-width: 1280px) {
 
-  .header-top,
+  .header,
   .banner,
   .advantages,
   .statistics-list {
@@ -849,7 +854,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .header {
+  .banner1 {
     background: linear-gradient(180deg,
         rgba(255, 255, 255, 0.03) 2.5%,
         rgba(27, 30, 34, 0.4) 42.42%,
@@ -865,19 +870,20 @@ body {
   //   display: block;
   // }
 
-  .header-top__right {
+  .header__right {
     flex-direction: column;
     max-width: 183px;
     align-items: flex-start;
   }
 
-  .banner {
+  .banner__content {
     max-width: 600px;
     flex-direction: column;
     margin-bottom: 70px;
   }
 
   .banner-text {
+    max-width: 500px;
     margin-bottom: 42px;
   }
 
@@ -1095,11 +1101,11 @@ body {
 }
 
 @media (max-width: 425px) {
-  .header-top {
+  .header {
     justify-content: center;
   }
 
-  .header-top__right {
+  .header__right {
     align-items: center;
   }
 
