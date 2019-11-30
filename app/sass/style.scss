@@ -30,12 +30,10 @@ body {
 .header {
   @include center();
   padding-top: 29px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.03) 2.5%,
       rgba(27, 30, 34, 0.4) 42.42%,
-      #1b1e22 80.67%
-    ),
+      #1b1e22 80.67%),
     url("../images/background.jpg") no-repeat center;
 }
 
@@ -125,7 +123,15 @@ body {
 }
 
 .product-name {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  overflow: hidden;
 }
 
 .banner {
@@ -502,6 +508,18 @@ body {
   background: url("../images/statistics-background.jpg") no-repeat center;
 }
 
+.statistics__title {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  overflow: hidden;
+}
+
 .statistics-list {
   display: flex;
   justify-content: space-between;
@@ -791,6 +809,7 @@ body {
 }
 
 @media (max-width: 1280px) {
+
   .header-top,
   .banner,
   .advantages,
@@ -831,12 +850,10 @@ body {
 
 @media (max-width: 1024px) {
   .header {
-    background: linear-gradient(
-        180deg,
+    background: linear-gradient(180deg,
         rgba(255, 255, 255, 0.03) 2.5%,
         rgba(27, 30, 34, 0.4) 42.42%,
-        #1b1e22 80.67%
-      ),
+        #1b1e22 80.67%),
       url("../images/background.jpg") no-repeat;
   }
 
