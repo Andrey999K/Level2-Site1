@@ -11,9 +11,11 @@ body {
   margin: 0;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.5%, rgba(27, 30, 34, 0.4) 42.42%, #1b1e22 80.67%) no-repeat center top 0,
-    url("../images/background.jpg") no-repeat center top 0,
-    #1b1e22;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.03) 2.5%,
+      rgba(27, 30, 34, 0.4) 42.42%,
+      #1b1e22 80.67%) no-repeat center top 0,
+    url("../images/background.jpg") no-repeat center top 0, #1b1e22;
   background-size: 1440px 1032px;
 }
 
@@ -75,6 +77,11 @@ body {
 .lang {
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #ffd519;
+    text-shadow: 0 0 20px #ffd519;
+  }
 }
 
 .nav {
@@ -98,6 +105,11 @@ body {
 .nav-list__link {
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #ffd519;
+    text-shadow: 0 0 20px #ffd519;
+  }
 }
 
 .nav__help {
@@ -263,6 +275,12 @@ body {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: #ffd000;
+    box-shadow: 0 0 20px #ffd000;
+  }
 }
 
 .advantages {
@@ -351,6 +369,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 48px;
+
+  &__image {
+    width: 360px;
+    height: 216px;
+    transition: 0.8s;
+  }
 }
 
 .directions-list__item {
@@ -363,6 +387,7 @@ body {
   margin: 12px;
   background: #23282f;
   border-radius: 4px;
+  transition: 0.8s;
 }
 
 .directions-list__item:hover {
@@ -388,6 +413,7 @@ body {
 
   .direction-list__prise {
     width: 96px;
+    transition: 0.8s;
   }
 
   .directions-list__title {
@@ -397,6 +423,7 @@ body {
 
   .directions-list__title {
     color: #333333;
+    transition: 0.8s;
   }
 
   .directions-list__description {
@@ -406,6 +433,7 @@ body {
 
   .directions-list__description {
     color: #333333;
+    transition: 0.8s;
   }
 
   .directions-list__details {
@@ -436,6 +464,7 @@ body {
   font-size: 13px;
   background: rgba(27, 30, 34, 0.75);
   border-radius: 0 6px 6px 0;
+  transition: 0.8s;
 }
 
 .direction-list__prise {
@@ -447,6 +476,7 @@ body {
   color: #1b1e22;
   line-height: 20px;
   background: #ffb800;
+  transition: 0.8s;
 }
 
 .text-prise {
@@ -469,12 +499,14 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  transition: 0.8s;
 }
 
 .directions-list__description {
   margin: 0 20px;
   font-size: 14px;
   line-height: 20px;
+  transition: 0.8s;
 }
 
 .directions-list__details {
@@ -483,6 +515,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   opacity: 0.5;
+  transition: 0.8s;
 }
 
 .button {
@@ -799,6 +832,34 @@ body {
   width: 100%;
 }
 
+.instagram-link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url("/images/instagram.svg") no-repeat center/cover;
+}
+
+.vk-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("/images/vk.svg") no-repeat center/cover;
+}
+
+.twitter-link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url("/images/twitter.svg") no-repeat center/cover;
+}
+
+.facebook-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/facebook.svg") no-repeat center/cover;
+}
+
 .footer-list {
   display: flex;
   justify-content: space-between;
@@ -854,7 +915,10 @@ body {
 
 @media (max-width: 1024px) {
   .banner1 {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 2.5%, rgba(27, 30, 34, 0.4) 42.42%, #1b1e22 80.67%),
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.03) 2.5%,
+        rgba(27, 30, 34, 0.4) 42.42%,
+        #1b1e22 80.67%),
       url("../images/background.jpg") no-repeat;
   }
 
@@ -1151,4 +1215,9 @@ body {
   .reviews__title {
     font-size: 26px;
   }
+}
+
+.scroll {
+  // border: solid 2px #000000;
+  backdrop-filter: blur(5px);
 }
