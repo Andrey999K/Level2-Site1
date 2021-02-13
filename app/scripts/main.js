@@ -37,19 +37,27 @@ document.addEventListener("DOMContentLoaded", () => {
         languageTexts = data;
     });
 
+	function replaceWords(mass, lang, name) {
+		mass.forEach((item, index) => {
+			item.textContent = languageTexts[lang][name][index];
+		});
+	}
+
 	//СМЕНА ЯЗЫКА
 	languages[0].addEventListener("click", () => {
 		console.log("English");
-		navList.forEach((item, index) => {
-			item.textContent = languageTexts[0].nav[index];
-		});
+		replaceWords(navList, 0, "nav");
+		replaceWords(h2, 0, "h2");
+		replaceWords(h3, 0, "h3");
+		// replaceWords(p, 0, "p");
 	});
 
 	languages[1].addEventListener("click", () => {
 		console.log("Русский");
-		navList.forEach((item, index) => {
-			item.textContent = languageTexts[1].nav[index];
-		});
+		replaceWords(navList, 1, "nav");
+		replaceWords(h2, 1, "h2");
+		replaceWords(h3, 1, "h3");
+		// replaceWords(p, 1, "p");
 	});
 
 });
