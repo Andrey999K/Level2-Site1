@@ -75,13 +75,18 @@ body {
   list-style-type: none;
 }
 
-.other-lang a {
+.other-lang button {
   color: rgba(196, 196, 196, 0.5);
 }
 
 .lang {
   color: #ffffff;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: #ffd519;
