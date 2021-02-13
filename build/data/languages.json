@@ -18,48 +18,48 @@
             "Feedback from our clients"
         ],
         "p": [
-            "Брось себе вызов. Отправься в путешествия в дикие уголки природы.",
-            "Визовая поддержка клиентов",
-            "Направления по всему миру",
-            "Сопровождение опытными гидами",
-            "Полное обеспечение снаряжением",
-            "Одно из лучших мест отдыха находится в районе Хардангера, у туристов есть возможность ежедневно любоваться дикой природой севера.",
-            "Подробнее",
-            "Уникальный поход совмещенный с путешествием по самому большому и красивому фьорду – Согне-фьорд.",
-            "Подробнее",
-            "Одна из самых знаменитых гор Кавказа. Расположена она в регионе Сванети. Со сванского языка \"уш\" означает беда, \"ба\" — гору. То есть гора, приносящая несчастье.",
-            "Подробнее",
-            "Водный поход с элементами ориентирования и необычными природными объектами. Неделя настоящего отдыха для тех, кто любит ...",
-            "Подробнее",
-            "Язык Тролля - без преувеличения самое известное и культовое место в Норвегии. К нему не доехать на машине. Сюда могут попасть только те..",
-            "Подробнее",
-            "За 9 ходовых дней (из них 2 дня – радиальные выходы) пройдем ~ 135 км по горам, лавовым полям, разноцветным холмам и другим исландским природным..",
-            "Подробнее",
+            "Challenge yourself. Go on a journey to the wilderness of nature.",
+            "Visa customer support",
+            "Destinations around the world",
+            "Accompanied by experienced guides",
+            "Full provision of equipment",
+            "One of the best holiday destinations is in the Hardanger area, tourists have the opportunity to admire the wild nature of the north every day.",
+            "More details",
+            "A unique hike combined with a journey through the largest and most beautiful fjord - Sognefjord.",
+            "More details",
+            "One of the most famous mountains in the Caucasus. It is located in the Svaneti region. From the Svan language, \"ush\" means trouble, \"ba\" - mountain. That is, a mountain that brings misfortune.",
+            "More details",
+            "Water trip with orientation elements and unusual natural objects. A week of real relaxation for those who love ...",
+            "More details",
+            "Trolltunga is, without exaggeration, the most famous and iconic place in Norway. It cannot be reached by car. Only those can get here ..",
+            "More details",
+            "In 9 walking days (of which 2 days are radial hikes), we will walk ~ 135 km through mountains, lava fields, colorful hills and other Icelandic natural ..",
+            "More details",
             "9",
-            "Лет работы",
+            "Years of work",
             "62,500",
-            "Довольных клиентов",
+            "Satisfied customers",
             "112",
-            "Захватываюших туров",
+            "Exciting tours",
             "23",
-            "Офиса в Беларуси",
-            "20 октября 2018",
-            "Блоги о путешествиях - это актуальное пространство, и каждый день оно становится более переполненным. И многие советы, которые..",
-            "17 октября 2018",
+            "Offices in Belarus",
+            "20 october 2018",
+            "Travel blogs are a trending space and it gets more crowded every day. And many tips that ..",
+            "17 october 2018",
             "208",
             "21",
-            "Норвегия — пожалуй, лучшая страна для приключенчес- кого туризма в Европе. Здесь есть все: горы для альпинистов..",
-            "12 октября 2018",
+            "Norway is arguably the best adventure travel country in Europe. There is everything here: mountains for climbers ..",
+            "12 october 2018",
             "112",
             "13",
-            "Спасибо, что даете почувствовать себя сводобными! Ходили дважды, и каждый раз заряжались энергией на год вперед. Отдельное спасибо гиду Михаилу!",
-            "София",
+            "Thank you for making yourself feel free! We went twice, and each time we were charged with energy for a year in advance. Special thanks to guide Mikhail!",
+            "Sofia",
             "E-mail",
-            "Адрес",
-            "Немига 5а, офис 18, Минск",
-            "Телефоны",
+            "Address",
+            "Nemiga 5a, office 18, Minsk",
+            "Telephones",
             "+375 33 888-44-22 +375 29 963-85-21",
-            "Мы в соцсетях"
+            "We are in social networks"
         ],
         "h3": [
             "Camping in Hardanger - the heart of the Fjord Region",
@@ -71,6 +71,18 @@
             "10 places on Earth that everyone should visit",
             "How to become a successful travel blogger",
             "Life hacks of a successful trip to Norway"
+        ],
+        "placeholders": [
+            "Where",
+            "When",
+            "Duration",
+            "Tour type"
+        ],
+        "buttons": [
+            "Help",
+            "Find",
+            "See all",
+            "See all"
         ]
     },
     {
@@ -145,6 +157,18 @@
             "10 мест на Земле, которые обязательно должен посетить каждый",
             "Как стать успешным тревел-блогером",
             "Лайфхаки успешно- го путешествия по Норвегии"
+        ],
+        "placeholders": [
+            "Куда",
+            "Когда",
+            "Продолжительность",
+            "Тип тура"
+        ],
+        "buttons": [
+            "Помощь",
+            "Найти",
+            "Смотреть все",
+            "Смотреть все"
         ]
     }
 ]

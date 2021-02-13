@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	const navList = document.querySelectorAll(".nav-list a");
 	const h2 = document.querySelectorAll("h2");
 	const h3 = document.querySelectorAll("h3");
-	const p = document.querySelectorAll("p");
+	const p = document.querySelectorAll("p:not(form p)");
+	const inputs = document.querySelectorAll("form input");
+	const buttons = document.querySelectorAll("button:not(.lang)");
 
 	let languageTexts = [];
 
@@ -49,7 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		replaceWords(navList, 0, "nav");
 		replaceWords(h2, 0, "h2");
 		replaceWords(h3, 0, "h3");
-		// replaceWords(p, 0, "p");
+		replaceWords(p, 0, "p");
+		inputs.forEach((item, index) => {
+			item.placeholder = languageTexts[0].placeholders[index];
+		});
+		replaceWords(buttons, 0, "buttons");
 	});
 
 	languages[1].addEventListener("click", () => {
@@ -57,7 +63,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		replaceWords(navList, 1, "nav");
 		replaceWords(h2, 1, "h2");
 		replaceWords(h3, 1, "h3");
-		// replaceWords(p, 1, "p");
+		replaceWords(p, 1, "p");
+		inputs.forEach((item, index) => {
+			item.placeholder = languageTexts[1].placeholders[index];
+		});
+		replaceWords(buttons, 1, "buttons");
 	});
 
 });

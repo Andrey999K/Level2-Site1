@@ -794,6 +794,7 @@ body {
 .social-networks {
   display: flex;
   flex-wrap: wrap;
+  max-width: 177px;
   width: 100%;
   max-width: 150px;
 }
@@ -840,6 +841,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 177px;
 }
 
 .instagram-link {
