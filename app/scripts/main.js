@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const p = document.querySelectorAll("p:not(form p)");
 	const inputs = document.querySelectorAll("form input");
 	const buttons = document.querySelectorAll("button:not(.lang)");
+	const prise = document.querySelectorAll(".direction-list__prise");
 
 	let languageTexts = [];
 
@@ -56,6 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			item.placeholder = languageTexts[0].placeholders[index];
 		});
 		replaceWords(buttons, 0, "buttons");
+		prise.forEach(item => {
+			item.innerHTML = item.innerHTML.replace("от", "from");
+		});
 	});
 
 	languages[1].addEventListener("click", () => {
@@ -68,6 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			item.placeholder = languageTexts[1].placeholders[index];
 		});
 		replaceWords(buttons, 1, "buttons");
+		prise.forEach(item => {
+			item.innerHTML = item.innerHTML.replace("from", "от");
+		});
 	});
 
 });

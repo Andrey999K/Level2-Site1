@@ -422,7 +422,7 @@ body {
   }
 
   .direction-list__prise {
-    width: 96px;
+    min-width: 96px;
     transition: 0.8s;
   }
 
@@ -468,7 +468,7 @@ body {
   position: relative;
   top: -219px+158px;
   display: flex;
-  width: 248px;
+  width: 260px;
   height: 32px;
   font-weight: 500;
   font-size: 13px;
@@ -481,8 +481,8 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  width: 78px;
-  padding-bottom: 4px;
+  min-width: 78px;
+  padding: 4px;
   color: #1b1e22;
   line-height: 20px;
   background: #ffb800;
@@ -841,7 +841,6 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 177px;
 }
 
 .instagram-link {
