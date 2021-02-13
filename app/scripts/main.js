@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const menu_ = document.querySelector('.nav-list');
+	const menu_ = document.querySelector('.header');
 	const scrollspy = new VanillaScrollspy(menu_);
 	scrollspy.init();
 

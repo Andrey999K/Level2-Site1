@@ -50,6 +50,11 @@ body {
   max-width: 1128px;
 
   @include container();
+
+  &__logo {
+    width: 183px;
+    height: 50px;
+  }
 }
 
 .header__right {
