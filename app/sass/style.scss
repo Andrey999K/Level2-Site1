@@ -87,6 +87,7 @@ body {
     border: 0;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s;
 
     &:hover {
         color: #ffd519;
@@ -115,6 +116,7 @@ body {
 .nav-list__link {
     color: #ffffff;
     text-decoration: none;
+    transition: 0.3s;
 
     &:hover {
         color: #ffd519;
@@ -137,11 +139,12 @@ body {
     border-radius: 10px;
     outline: none;
     cursor: pointer;
-}
+    transition: 0.5s;
 
-.nav__help:hover {
-    color: #000000;
-    background: #ffb800;
+    &:hover {
+        color: #000000;
+        background: #ffb800;
+    }
 }
 
 .menu-icon {
@@ -285,7 +288,7 @@ body {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 
     &:hover {
         background: #ffd000;
@@ -408,49 +411,40 @@ body {
     background: #ffffff;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.75);
     cursor: pointer;
-    transition: 0.8s;
 
     .directions-list__image {
         width: 384px;
         height: 228px;
-        transition: 0.8s;
     }
 
     .direction-list__prise-date {
         top: -233px+185px;
         width: 264px;
-        transition: 0.8s;
     }
 
     .direction-list__prise {
         min-width: 96px;
-        transition: 0.8s;
     }
 
     .directions-list__title {
         margin: 0 32px;
-        transition: 0.8s;
     }
 
     .directions-list__title {
         color: #333333;
-        transition: 0.8s;
     }
 
     .directions-list__description {
         margin: 0 32px;
-        transition: 0.8s;
     }
 
     .directions-list__description {
         color: #333333;
-        transition: 0.8s;
     }
 
     .directions-list__details {
         margin: 0 32px 33px;
         color: #000000;
-        transition: 0.8s;
     }
 }
 
@@ -543,11 +537,12 @@ body {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-}
+    transition: 0.5s;
 
-.button:hover {
-    color: #000000;
-    background: #ffb800;
+    &:hover {
+        color: #000000;
+        background: #ffb800;
+    }
 }
 
 .statistics {
@@ -719,10 +714,12 @@ body {
 
 .comments__icon {
     margin-right: 7px;
-}
 
-.comments__icon:hover {
-    cursor: pointer;
+
+    &:hover {
+        cursor: pointer;
+        transition: 0.3s;
+    }
 }
 
 .likes {
@@ -733,10 +730,11 @@ body {
 
 .likes__icon {
     margin-right: 7px;
-}
+    transition: 0.2s;
 
-.likes__icon:hover {
-    cursor: pointer;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .reviews {
