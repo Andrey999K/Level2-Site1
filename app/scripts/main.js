@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        speed: 1500,
+        loop: true,
+        autoplay: {
+            delay: 3000,
         }
     });
 
@@ -27,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener('scroll', () => {
         let y = window.pageYOffset;
-        const header = document.querySelectorAll(".header");
+        const header = document.querySelectorAll(".header__content");
 
         if (y > 0) {
             header[0].classList.add('scroll');
