@@ -5,9 +5,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
@@ -30,30 +27,46 @@ body {
     margin: auto;
 }
 
-@mixin container {
-    max-width: 1128px;
-    margin: auto;
-}
+// @mixin container {
+//     max-width: 1128px;
+//     margin: auto;
+// }
 
-.banner1 {
-    @include center();
+// .banner1 {
+//     @include center();
+// }
+
+.wrapper {
+    max-width: 1228px;
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header {
     position: fixed;
-    top: 29px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-    max-width: 1128px;
+    top: 0;
+    z-index: 1;
+    padding: 29px 20px;
+    // top: 29px;
+    // z-index: 1;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // width: 100%;
+    // max-width: 1128px;
 
-    @include container();
+    // @include container();
 
-    &__logo {
-        width: 183px;
-        height: 50px;
+    // &__logo {
+    //     width: 183px;
+    //     height: 50px;
+    // }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -149,6 +162,10 @@ body {
 
 .menu-icon {
     display: none;
+}
+
+.banner {
+    padding: 0 20px;
 }
 
 .banner__title {
@@ -296,20 +313,12 @@ body {
     }
 }
 
-.advantages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1128px;
-    margin: auto;
-}
-
 .advantages__title {
-    margin-bottom: 21px;
     font-weight: 500;
     font-size: 34px;
     font-style: normal;
     line-height: 38px;
+    text-align: center;
 }
 
 .advantages-list {
@@ -317,6 +326,7 @@ body {
     justify-content: space-between;
     width: 100%;
     max-width: 1128px;
+    margin-top: 21px;
     margin-bottom: 61px;
     // flex-wrap: wrap;
     list-style-type: none;
@@ -366,7 +376,10 @@ body {
     align-items: center;
     max-width: 1252px;
     margin: 0 auto 72px;
-    padding: 0 50px;
+
+    .wrapper {
+        max-width: 1252px;
+    }
 }
 
 .directions__title {
@@ -524,6 +537,7 @@ body {
 }
 
 .button {
+    display: block;
     width: 100%;
     max-width: 216px;
     height: 48px;
@@ -537,6 +551,7 @@ body {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    margin: 48px auto 0;
     transition: 0.5s;
 
     &:hover {
@@ -546,9 +561,26 @@ body {
 }
 
 .statistics {
+    position: relative;
     margin-bottom: 62px;
     padding: 59px 0 68px;
     background: url("../images/statistics-background.jpg") no-repeat center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: rgba(27, 30, 34, 0.78);
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .statistics__title {
@@ -567,7 +599,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    @include container();
+    // @include container();
 }
 
 .statistics-list__item {
@@ -596,7 +628,6 @@ body {
     align-items: center;
     max-width: 1228px;
     margin: 0 auto 62px;
-    padding: 0 50px;
 }
 
 .blog__title {
@@ -604,6 +635,7 @@ body {
     font-weight: 500;
     font-size: 34px;
     line-height: 38px;
+    text-align: center;
 }
 
 .blog__description {
@@ -738,14 +770,22 @@ body {
 }
 
 .reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 924px;
-    height: 362px;
-    margin: auto;
-    margin-bottom: 61px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // width: 100%;
+    // max-width: 924px;
+    // height: 362px;
+    // margin: auto;
+    // min-width: 0;
+    // margin-bottom: 61px;
+
+    // &__slide {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     max-width: 100%;
+    // }
 }
 
 .reviews__title {
@@ -777,7 +817,6 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1128px;
     margin: 0 auto 46px;
     font-size: 13px;
     line-height: 16px;
@@ -875,6 +914,7 @@ body {
     justify-content: space-between;
     width: 100%;
     list-style-type: none;
+    margin: 0 auto;
 }
 
 .footer-list__item {
@@ -885,11 +925,12 @@ body {
 
 @media (max-width: 1280px) {
 
-    .header,
-    .banner,
-    .advantages,
-    .statistics-list {
-        padding: 0 50px;
+    .wrapper {
+        max-width: 1128px;
+    }
+
+    .banner .wrapper {
+        max-width: 1161px;
     }
 
     .nav {
@@ -908,6 +949,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         max-width: 552px;
+        margin: 0 auto;
     }
 
     .ten-places {
@@ -924,12 +966,9 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .banner1 {
-        background: linear-gradient(180deg,
-                rgba(255, 255, 255, 0.03) 2.5%,
-                rgba(27, 30, 34, 0.4) 42.42%,
-                #1b1e22 80.67%),
-            url("../images/background.jpg") no-repeat;
+
+    .banner {
+        padding: 0;
     }
 
     .nav {
@@ -964,6 +1003,7 @@ body {
     .advantages-list {
         flex-wrap: wrap;
         max-width: 540px;
+        margin: 21px auto 61px;
     }
 
     .advantages-list__item {
@@ -1051,7 +1091,8 @@ body {
 
     .statistics-list {
         flex-wrap: wrap;
-        max-width: 500px;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .blog__description {
@@ -1139,12 +1180,12 @@ body {
     }
 
     .form__when {
-        max-width: 352px;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
     .form__duration {
-        max-width: 352px;
+        max-width: 100%;
     }
 
     .advantages__title {
@@ -1209,19 +1250,21 @@ body {
 }
 
 @media (max-width: 425px) {
+
     .header {
-        justify-content: center;
+        &__content {
+            justify-content: center;
+        }
     }
 
     .header__right {
         align-items: center;
     }
 
-    .banner,
-    .advantages,
-    .blog,
-    .directions,
-    .reviews,
+    .wrapper {
+        padding: 0 15px;
+    }
+
     .banner-search {
         padding: 0 15px;
     }
